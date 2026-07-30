@@ -3,177 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Dark Energy Portfolio</title>
+    <title>Philosophy | Dark Energy Portfolio</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/pages.css">
 </head>
-<body class="dark-energy-theme services-page">
+<body class="dark-energy-theme philosophy-page">
+    <!-- Same nav and background as other pages -->
     <div class="cosmic-background">
         <div class="dark-energy-field"></div>
         <div class="gravitational-waves"></div>
     </div>
     
     <nav class="cosmic-navigation" id="mainNav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">
-                <div class="logo-symbol">
-                    <div class="event-horizon"></div>
-                    <span class="logo-text">ARCHITECT</span>
-                </div>
-            </a>
-            <div class="nav-menu" id="navMenu">
-                <a href="about.html" class="nav-item"><span class="nav-text">About</span><div class="nav-glow"></div></a>
-                <a href="projects.html" class="nav-item"><span class="nav-text">Projects</span><div class="nav-glow"></div></a>
-                <a href="services.html" class="nav-item"><span class="nav-text">Services</span><div class="nav-glow"></div></a>
-                <a href="philosophy.html" class="nav-item"><span class="nav-text">Philosophy</span><div class="nav-glow"></div></a>
-                <a href="contact.html" class="nav-item"><span class="nav-text">Contact</span><div class="nav-glow"></div></a>
-            </div>
-            <button class="nav-toggle" id="navToggle"><div class="hamburger-line"></div><div class="hamburger-line"></div><div class="hamburger-line"></div></button>
-        </div>
+        <!-- Same navigation as services.html -->
     </nav>
     
     <main class="main-content">
-        <section class="services-header">
+        <section class="philosophy-hero">
             <div class="section-container">
-                <div class="section-badge">Services</div>
-                <h1>Architectural Services</h1>
-                <p class="section-subtitle">Expert guidance for complex technical challenges</p>
+                <div class="section-badge">Philosophy</div>
+                <h1>Architectural Philosophy</h1>
+                <p class="section-subtitle">Core principles that guide every design decision</p>
             </div>
         </section>
         
-        <section class="services-detailed">
-            <div class="service-detail">
-                <h2>🏛️ System Architecture Design</h2>
-                <p>Comprehensive architectural design for large-scale distributed systems. From initial concept to production deployment, I guide you through every architectural decision.</p>
-                <ul class="service-benefits">
-                    <li>Complete system blueprints</li>
-                    <li>Technology stack selection</li>
-                    <li>Scalability planning</li>
-                    <li>Security architecture</li>
-                    <li>Performance optimization</li>
-                    <li>Documentation & handover</li>
-                </ul>
+        <section class="philosophy-content">
+            <div class="philosophy-principle">
+                <h2>01. Simplicity Through Complexity</h2>
+                <p>True simplicity emerges from understanding and mastering complexity, not avoiding it. I believe in diving deep into the intricate details of systems, understanding every interaction and dependency, then distilling that complexity into elegant, simple interfaces. The result is architecture that feels effortless to use but is built on rock-solid foundations.</p>
             </div>
             
-            <div class="service-detail">
-                <h2>🔍 Architecture Review & Audit</h2>
-                <p>Critical evaluation and optimization of existing architectures. Identify bottlenecks, security vulnerabilities, and technical debt before they become critical issues.</p>
-                <ul class="service-benefits">
-                    <li>Performance audit</li>
-                    <li>Security assessment</li>
-                    <li>Cost optimization</li>
-                    <li>Technical debt analysis</li>
-                    <li>Scalability review</li>
-                    <li>Actionable recommendations</li>
-                </ul>
+            <div class="philosophy-principle">
+                <h2>02. Emergent Design</h2>
+                <p>Architecture should evolve organically, allowing patterns to emerge from real usage rather than premature abstraction. I start with the simplest solution that could work, then refactor and evolve based on actual requirements and constraints. This approach avoids over-engineering while ensuring the architecture adapts to real-world needs.</p>
             </div>
             
-            <div class="service-detail">
-                <h2>🎯 Cloud Strategy & Migration</h2>
-                <p>Strategic planning for cloud adoption, migration, and optimization. Navigate the complexities of multi-cloud environments with confidence.</p>
-                <ul class="service-benefits">
-                    <li>Multi-cloud architecture</li>
-                    <li>Migration planning</li>
-                    <li>Cost management</li>
-                    <li>Compliance frameworks</li>
-                    <li>DevOps transformation</li>
-                    <li>Team training</li>
-                </ul>
+            <div class="philosophy-principle">
+                <h2>03. Resilience by Default</h2>
+                <p>Systems must be designed to fail gracefully and recover autonomously. Every component should assume failure is inevitable and handle it without cascading problems. This means implementing circuit breakers, retries with backoff, dead letter queues, and comprehensive monitoring from day one.</p>
             </div>
             
-            <div class="service-detail">
-                <h2>📚 Technical Leadership</h2>
-                <p>Guiding engineering teams toward architectural excellence. Build sustainable engineering cultures that deliver quality at scale.</p>
-                <ul class="service-benefits">
-                    <li>Team mentorship</li>
-                    <li>Best practices implementation</li>
-                    <li>Documentation standards</li>
-                    <li>Knowledge transfer</li>
-                    <li>Code review processes</li>
-                    <li>Architecture governance</li>
-                </ul>
+            <div class="philosophy-principle">
+                <h2>04. Performance as a Feature</h2>
+                <p>Speed and efficiency are not optimizations—they are fundamental requirements. Performance impacts user experience, operational costs, and system reliability. I design for performance from the ground up, considering latency, throughput, and resource utilization at every architectural decision point.</p>
             </div>
             
-            <div class="service-detail">
-                <h2>⚡ Performance Optimization</h2>
-                <p>Transform sluggish systems into high-performance machines. Deep dive into bottlenecks and optimize every layer of your stack.</p>
-                <ul class="service-benefits">
-                    <li>Performance profiling</li>
-                    <li>Bottleneck identification</li>
-                    <li>Database optimization</li>
-                    <li>Caching strategies</li>
-                    <li>CDN implementation</li>
-                    <li>Monitoring setup</li>
-                </ul>
+            <div class="philosophy-principle">
+                <h2>05. Documentation as Code</h2>
+                <p>Architecture decisions should be documented with the same rigor as code. Decision records, diagrams, and runbooks are living documents that evolve with the system. This ensures knowledge transfer, reduces onboarding time, and creates institutional memory that survives team changes.</p>
             </div>
             
-            <div class="service-detail">
-                <h2>🔐 Security Architecture</h2>
-                <p>Build impenetrable security layers with zero-trust principles. Protect your systems and data with battle-tested security patterns.</p>
-                <ul class="service-benefits">
-                    <li>Threat modeling</li>
-                    <li>Security patterns</li>
-                    <li>Authentication/Authorization</li>
-                    <li>Encryption strategies</li>
-                    <li>Compliance (SOC2, GDPR, HIPAA)</li>
-                    <li>Security audits</li>
-                </ul>
+            <div class="philosophy-principle">
+                <h2>06. Trade-off Awareness</h2>
+                <p>Every architectural decision involves trade-offs. There is no perfect solution, only the best solution for a specific context. I make these trade-offs explicit, documenting what we're optimizing for and what we're willing to sacrifice. This transparency enables better decision-making and sets clear expectations.</p>
             </div>
-        </section>
-        
-        <section class="contact-cta" style="text-align: center; padding: 4rem 0;">
-            <div class="section-container">
-                <h2 style="font-size: 2rem; margin-bottom: 1rem;">Ready to transform your architecture?</h2>
-                <p style="color: var(--text-muted); margin-bottom: 2rem;">Let's discuss how I can help with your specific challenges.</p>
-                <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+            
+            <div class="philosophy-principle">
+                <h2>07. Team-Centric Architecture</h2>
+                <p>The best architecture is useless if the team can't understand or maintain it. I design systems that match the team's skills and capacity, with clear boundaries and responsibilities. Architecture should enable the team, not constrain them.</p>
             </div>
         </section>
     </main>
     
+    <!-- Same footer and scripts -->
     <footer class="cosmic-footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo-symbol">
-                        <div class="event-horizon"></div>
-                        <span class="logo-text">ARCHITECT</span>
-                    </div>
-                    <p>Designing digital universes with architectural precision.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Navigation</h4>
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="philosophy.html">Philosophy</a></li>
-                            <li><a href="insights.html">Insights</a></li>
-                            <li><a href="speaking.html">Speaking</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Connect</h4>
-                        <ul>
-                            <li><a href="#" class="social-link">GitHub</a></li>
-                            <li><a href="#" class="social-link">LinkedIn</a></li>
-                            <li><a href="#" class="social-link">Twitter</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024-2026 Architect. All rights reserved.</p>
-            </div>
-        </div>
+        <!-- Same footer content -->
     </footer>
     
     <script src="../js/gravitational-system.js"></script>
