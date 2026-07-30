@@ -1,0 +1,333 @@
+/* ============================================
+   DARK ENERGY PORTFOLIO - RESPONSIVE
+   Mobile-First Adaptive Styles
+   ============================================ */
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+    :root {
+        --space-2xl: 6rem;
+    }
+    
+    .section-container {
+        padding: 0 var(--space-md);
+    }
+    
+    .hero-container {
+        gap: var(--space-xl);
+    }
+    
+    .hero-visual {
+        height: 400px;
+    }
+    
+    .floating-panels .dark-matter-panel {
+        width: 150px !important;
+    }
+    
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tech-cloud {
+        height: 400px;
+    }
+    
+    .orbit-1 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .orbit-2 {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .orbit-3 {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .orbit-4 {
+        width: 380px;
+        height: 380px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+    :root {
+        --space-2xl: 4rem;
+        --space-xl: 2rem;
+    }
+    
+    html {
+        font-size: 14px;
+    }
+    
+    .nav-container {
+        padding: 0 var(--space-md);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-primary);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-xl);
+        transform: translateX(-100%);
+        transition: transform var(--transition-slow);
+    }
+    
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+    
+    .nav-item {
+        font-size: 1.5rem;
+    }
+    
+    .nav-toggle {
+        display: flex;
+        z-index: 10;
+    }
+    
+    .nav-toggle.active .hamburger-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .nav-toggle.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active .hamburger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    .hero-section {
+        min-height: auto;
+        padding: var(--space-2xl) var(--space-md);
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+    
+    .hero-visual {
+        order: -1;
+        height: 300px;
+    }
+    
+    .floating-panels .dark-matter-panel {
+        width: 120px !important;
+        font-size: 0.75rem;
+    }
+    
+    .expertise-grid,
+    .projects-showcase,
+    .philosophy-grid,
+    .services-grid,
+    .testimonials-slider {
+        grid-template-columns: 1fr;
+    }
+    
+    .expertise-card,
+    .philosophy-card,
+    .service-card,
+    .testimonial-card {
+        padding: var(--space-lg);
+    }
+    
+    .tech-cloud {
+        height: 300px;
+    }
+    
+    .tech-orbit {
+        display: none;
+    }
+    
+    .tech-item {
+        position: static;
+        transform: none !important;
+        display: inline-block;
+        margin: var(--space-xs);
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .ai-assistant {
+        bottom: var(--space-md);
+        right: var(--space-md);
+    }
+    
+    .ai-interface {
+        width: calc(100vw - 2rem);
+        max-width: calc(100vw - 2rem);
+    }
+    
+    .section-title {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    :root {
+        --space-2xl: 3rem;
+        --space-xl: 1.5rem;
+        --space-lg: 1rem;
+    }
+    
+    html {
+        font-size: 13px;
+    }
+    
+    .hero-title {
+        font-size: clamp(2rem, 12vw, 3rem);
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .floating-panels .dark-matter-panel {
+        width: 100px !important;
+        font-size: 0.65rem;
+        padding: var(--space-sm);
+    }
+    
+    .section-container {
+        padding: 0 var(--space-sm);
+    }
+    
+    .card-icon,
+    .service-icon,
+    .contact-icon {
+        font-size: 2rem;
+    }
+    
+    .ai-orb {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .orb-core {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 100vh;
+    }
+    
+    .hero-container {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --panel-border: rgba(255, 255, 255, 0.5);
+        --text-muted: #a0a0a0;
+    }
+    
+    .dark-matter-panel,
+    .expertise-card,
+    .project-panel,
+    .service-card {
+        border-width: 2px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .cosmic-background,
+    .gravitational-particles,
+    .cosmic-navigation,
+    .ai-assistant,
+    .scroll-indicator {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+/* Dark Mode Support (System) */
+@media (prefers-color-scheme: light) {
+    /* Optional: Light theme variables if needed */
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .dark-matter-panel:hover,
+    .expertise-card:hover,
+    .project-panel:hover,
+    .service-card:hover {
+        transform: none;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    .hover-lift:hover,
+    .hover-scale:hover {
+        transform: none;
+    }
+}
