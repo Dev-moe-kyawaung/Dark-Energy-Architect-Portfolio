@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microservices vs Monolith | Insights</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body class="dark-energy-theme">
+    <div class="cosmic-background">
+        <div class="dark-energy-field"></div>
+        <div class="gravitational-waves"></div>
+    </div>
+    
+    <nav class="cosmic-navigation" id="mainNav">
+        <!-- Same nav -->
+    </nav>
+    
+    <main class="main-content" style="max-width: 800px; margin: 0 auto; padding: 100px 20px 50px;">
+        <article style="padding: 2rem 0;">
+            <div class="section-badge">Insight</div>
+            <h1 style="font-size: 2.5rem; margin: 1rem 0 2rem;">Microservices vs Monolith: A Practical Guide</h1>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">June 2026 · 12 min read</p>
+            
+            <div style="border-top: 1px solid var(--panel-border); margin: 2rem 0;"></div>
+            
+            <p style="font-size: 1.25rem; color: var(--text-secondary); line-height: 1.8;">
+                The microservices vs monolith debate is often framed as a binary choice. In reality, it's a spectrum, and the right answer depends on your team, your product, and your stage of growth.
+            </p>
+            
+            <h2 style="margin-top: 3rem; margin-bottom: 1.5rem;">When to Choose a Monolith</h2>
+            <p style="color: var(--text-secondary); line-height: 1.8;">
+                Start with a monolith when: you have a small team (< 10 engineers), you're validating product-market fit, your deployment frequency is low, and operational complexity is a concern. Monoliths are easier to debug, test, and deploy.
+            </p>
+            
+            <h2 style="margin-top: 3rem; margin-bottom: 1.5rem;">When to Choose Microservices</h2>
+            <p style="color: var(--text-secondary); line-height: 1.8;">
+                Consider microservices when: you have multiple teams working independently, you need different scaling characteristics for different components, you're deploying multiple times per day, and you can handle the operational overhead.
+            </p>
+            
+            <h2 style="margin-top: 3rem; margin-bottom: 1.5rem;">Migration Strategies</h2>
+            <p style="color: var(--text-secondary); line-height: 1.8;">
+                The strangler fig pattern works best: gradually extract services from the monolith, starting with the least coupled components. Use feature flags, maintain backward compatibility, and migrate incrementally.
+            </p>
+            
+            <h2 style="margin-top: 3rem; margin-bottom: 1.5rem;">Key Lessons</h2>
+            <ul style="color: var(--text-secondary); line-height: 2;">
+                <li>→ Start monolithic, extract when you feel the pain</li>
+                <li>→ Service boundaries are the hardest part</li>
+                <li>→ Distributed transactions are a last resort</li>
+                <li>→ Observability is non-negotiable</li>
+                <li>→ Team structure matters more than technology</li>
+            </ul>
+            
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--panel-border);">
+                <a href="insights.html" class="btn btn-secondary">← Back to Insights</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="cosmic-footer">
+        <!-- Same footer -->
+    </footer>
+    
+    <script src="../js/gravitational-system.js"></script>
+    <script src="../js/cosmic-pulses.js"></script>
+    <script src="../js/dark-matter-panels.js"></script>
+    <script src="../js/ai-assistant.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
