@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Senior Architect Portfolio - Dark Energy Theme with Gravitational Animations">
+    <meta name="theme-color" content="#0a0a0f">
+    
+    <title>ARCHITECT | Dark Energy Portfolio</title>
+    
+    <!-- Preload critical assets -->
+    /main.css" as="style">
+    /animations.css" as="style">
+    /gravitational-system.js" as="script">
+    
+    <!-- Stylesheets -->
+    /main.css">
+    /animations.css">
+    /components.css">
+    /pages.css">
+    /responsive.css">
+    
+    <!-- Fonts -->
+    //fonts.googleapis.com">
+    //fonts.gstatic.com" crossorigin>
+    //fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    /svg+xml" href="assets/favicon.svg">
+</head>
+
+<body class="dark-energy-theme">
+    <!-- Cosmic Background -->
+    <div class="cosmic-background" id="cosmicBg">
+        <div class="dark-energy-field"></div>
+        <div class="gravitational-waves"></div>
+        <div class="cosmic-dust"></div>
+        <div class="pulse-rings"></div>
+    </div>
+    
+    <!-- Gravitational Particles -->
+    anvas id="gravitationalCanvas" class="gravitational-particles"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="cosmic-navigation" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-symbol">
+                    <div class="event-horizon"></div>
+                    <span class="logo-text">ARCHITECT</span>
+                </div>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="pages/about.html" class="nav-item" data-section="about">
+                    <span class="nav-text">About</span>
+                    <div class="nav-glow"></div>
+                </a>
+                <a href="pages/projects.html" class="nav-item" data-section="projects">
+                    <span class="nav-text">Projects</span>
+                    <div class="nav-glow"></div>
+                </a>
+                <a href="pages/services.html" class="nav-item" data-section="services">
+                    <span class="nav-text">Services</span>
+                    <div class="nav-glow"></div>
+                </a>
+                <a href="pages/philosophy.html" class="nav-item" data-section="philosophy">
+                    <span class="nav-text">Philosophy</span>
+                    <div class="nav-glow"></div>
+                </a>
+                <a href="pages/contact.html" class="nav-item" data-section="contact">
+                    <span class="nav-text">Contact</span>
+                    <div class="nav-glow"></div>
+                </a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- AI Assistant -->
+    <div class="ai-assistant" id="aiAssistant">
+        <div class="ai-orb">
+            <div class="orb-core"></div>
+            <div class="orb-ring ring-1"></div>
+            <div class="orb-ring ring-2"></div>
+            <div class="orb-ring ring-3"></div>
+            <div class="orb-field"></div>
+        </div>
+        <div class="ai-interface">
+            <div class="ai-header">
+                <span class="ai-title">Architect AI</span>
+                <button class="ai-close" id="aiClose" aria-label="Close AI">&times;</button>
+            </div>
+            <div class="ai-content" id="aiContent">
+                <div class="ai-message">
+                    <p>hello. I am your architectural guide. I can explain the design philosophy, project structures, and technical implementations. What would you like to explore?</p>
+                </div>
+            </div>
+            <div class="ai-input-container">
+                <input type="text" class="ai-input" id="aiInput" placeholder="Ask about architecture...">
+                <button class="ai-submit" id="aiSubmit">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <div class="badge-pulse"></div>
+                        <span>Senior Architect</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line">Designing</span>
+                        <span class="title-line">Digital</span>
+                        <span class="title-line highlight">Universes</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Crafting gravitational experiences through architectural precision and cosmic-scale innovation.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="pages/projects.html" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <div class="btn-glow"></div>
+                        </a>
+                        <a href="pages/about.html" class="btn btn-secondary">
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="floating-panels">
+                        <div class="dark-matter-panel panel-1" data-depth="1">
+                            <div class="panel-glow"></div>
+                            <div class="panel-content">
+                                <div class="panel-icon">🏗️</div>
+                                <span>System Architecture</span>
+                            </div>
+                        </div>
+                        <div class="dark-matter-panel panel-2" data-depth="2">
+                            <div class="panel-glow"></div>
+                            <div class="panel-content">
+                                <div class="panel-icon">⚡</div>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                        <div class="dark-matter-panel panel-3" data-depth="3">
+                            <div class="panel-glow"></div>
+                            <div class="panel-content">
+                                <div class="panel-icon">🔮</div>
+                                <span>Scalability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <div class="scroll-text">Scroll to explore</div>
+            </div>
+        </section>
+        
+        <!-- Section 1: Expertise -->
+        <section class="expertise-section" id="expertise">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge">Expertise</div>
+                    <h2 class="section-title">Architectural Domains</h2>
+                    <p class="section-subtitle">Mastery across multiple dimensions of software architecture</p>
+                </div>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-card" data-gravity="0.5">
+                        <div class="card-orbit">
+                            <div class="orbit-ring"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-icon">🌐</div>
+                            <h3>System Architecture</h3>
+                            <p>Designing scalable, resilient distributed systems that handle cosmic-scale traffic.</p>
+                            <ul class="card-skills">
+                                >Microservices</li>
+                                >Event-Driven</li>
+                                >CQRS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-card" data-gravity="0.7">
+                        <div class="card-orbit">
+                            <div class="orbit-ring"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-icon">☁️</div>
+                            <h3>Cloud Infrastructure</h3>
+                            <p>Architecting cloud-native solutions across multi-cloud environments.</p>
+                            <ul class="card-skills">
+                                >AWS/GCP/Azure</li>
+                                >Kubernetes</li>
+                                >Serverless</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-card" data-gravity="0.6">
+                        <div class="card-orbit">
+                            <div class="orbit-ring"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-icon">🔐</div>
+                            <h3>Security Architecture</h3>
+                            <p>Building impenetrable security layers with zero-trust principles.</p>
+                            <ul class="card-skills">
+                                >OAuth 2.0</li>
+                                >Zero Trust</li>
+                                >Encryption</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-card" data-gravity="0.8">
+                        <div class="card-orbit">
+                            <div class="orbit-ring"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-icon">📊</div>
+                            <h3>Data Architecture</h3>
+                            <p>Designing data pipelines and storage strategies for massive scale.</p>
+                            <ul class="card-skills">
+                                >Data Lakes</li>
+                                >Streaming</li>
+                                >Analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 2: Projects Showcase -->
+        <section class="projects-section" id="projects">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge">Projects</div>
+                    <h2 class="section-title">Gravitational Projects</h2>
+                    <p class="section-subtitle">Architectural systems that bend the digital universe</p>
+                </div>
+                
+                <div class="projects-showcase">
+                    <div class="project-panel" data-panel="1">
+                        <div class="panel-border"></div>
+                        <div class="panel-glow"></div>
+                        <div class="panel-content">
+                            <div class="project-image">
+                                <div class="image-placeholder">Project Alpha</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Nebula Platform</h3>
+                                <p>Cloud-native microservices architecture serving 10M+ daily users.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Kubernetes</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">GraphQL</span>
+                                </div>
+                                <a href="pages/project-nebula.html" class="project-link">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-panel" data-panel="2">
+                        <div class="panel-border"></div>
+                        <div class="panel-glow"></div>
+                        <div class="panel-content">
+                            <div class="project-image">
+                                <div class="image-placeholder">Project Beta</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Event Horizon</h3>
+                                <p>Real-time event streaming platform processing 100K events/sec.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Kafka</span>
+                                    <span class="tag">Rust</span>
+                                    <span class="tag">WebAssembly</span>
+                                </div>
+                                <a href="pages/project-horizon.html" class="project-link">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-panel" data-panel="3">
+                        <div class="panel-border"></div>
+                        <div class="panel-glow"></div>
+                        <div class="panel-content">
+                            <div class="project-image">
+                                <div class="image-placeholder">Project Gamma</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Quantum Core</h3>
+                                <p>High-performance computing architecture for financial systems.</p>
+                                <div class="project-tags">
+                                    <span class="tag">C++</span>
+                                    <span class="tag">CUDA</span>
+                                    <span class="tag">Redis</span>
+                                </div>
+                                <a href="pages/project-quantum.html" class="project-link">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: Experience Timeline -->
+        <section class="experience-section" id="experience">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge">Experience</div>
+                    <h2 class="section-title">Cosmic Journey</h2>
+                    <p class="section-subtitle">A gravitational timeline of architectural evolution</p>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item" data-year="2024">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2024</div>
+                            <h3>Principal Architect</h3>
+                            <p class="timeline-company">Tech Giant Corporation</p>
+                            <p class="timeline-desc">Leading architectural vision for next-generation cloud platform serving 100M+ users globally.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2022">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2022</div>
+                            <h3>Senior Architect</h3>
+                            <p class="timeline-company">Innovation Labs</p>
+                            <p class="timeline-desc">Architected event-driven microservices platform reducing infrastructure costs by 60%.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2020">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2020</div>
+                            <h3>Staff Engineer</h3>
+                            <p class="timeline-company">Scale Systems</p>
+                            <p class="timeline-desc">Designed distributed caching architecture handling 1M+ requests per second.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2018">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2018</div>
+                            <h3>Senior Engineer</h3>
+                            <p class="timeline-company">Digital Dynamics</p>
+                            <p class="timeline-desc">Led migration from monolith to microservices, improving deployment frequency by 40x.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 4: Philosophy -->
+        <section class="philosophy-section" id="philosophy">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge">Philosophy</div>
+                    <h2 class="section-title">Architectural Principles</h2>
+                    <p class="section-subtitle">Core beliefs that guide every design decision</p>
+                </div>
+                
+                <div class="philosophy-grid">
+                    <div class="philosophy-card">
+                        <div class="principle-number">01</div>
+                        <h3>Simplicity Through Complexity</h3>
+                        <p>True simplicity emerges from understanding and mastering complexity, not avoiding it.</p>
+                    </div>
+                    
+                    <div class="philosophy-card">
+                        <div class="principle-number">02</div>
+                        <h3>Emergent Design</h3>
+                        <p>Architecture should evolve organically, allowing patterns to emerge from real usage.</p>
+                    </div>
+                    
+                    <div class="philosophy-card">
+                        <div class="principle-number">03</div>
+                        <h3>Resilience by Default</h3>
+                        <p>Systems must be designed to fail gracefully and recover autonomously.</p>
+                    </div>
+                    
+                    <div class="philosophy-card">
+                        <div class="principle-number">04</div>
+                        <h3>Performance as a Feature</h3>
+                        <p>Speed and efficiency are not optimizations—they are fundamental requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 5: Technologies -->
+        <section class="technologies-section" id="technologies">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge">Technologies</div>
+                    <h2 class="section-title">Gravitational Tools</h2>
+                    <p class="section-subtitle">The technologies that power architectural excellence</p>
+                </div>
+                
+                <div class="tech-cloud">
+                    <div class="tech-orbit orbit-1">
+                        <div class="tech-item">JavaScript</div>
+                        <div class="tech-item">TypeScript</div>
+                        <div class="tech-item">Python</div>
+                        <div class="tech-item">Rust</div>
+                        <div class="tech-item">Go</div>
+                    </div>
+                    <div class="tech-orbit orbit-2">
+                        <div class="tech-item">Kubernetes</div>
+                        <div class="tech-item">Docker</div>
+                        <div class="tech-item">Terraform</div>
+                        <div class="tech-item">AWS</div>
+                    </div>
+                    <div class="tech-orbit orbit-3">
+                        <div class="tech-item">PostgreSQL</div>
+                        <div class="tech-item">Redis</div>
+                        <div class="tech-item">Kafka</div>
+                        <div class="tech-item">Elasticsearch</div>
+                    </div>
+                    <div class="tech-orbit orbit-4">
+                        <div class="tech-item">React</div>
+                        <div class="tech-item">Next.js</div>
+                        <div class="tech-item">Vue</div>
+                        <div class="tech-item">Svelte</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 6: Services -->
+        <section class="services-section" id="services">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge">Services</div>
+                    <h2 class="section-title">Architectural Services</h2>
+                    <p class="section-subtitle">Expert guidance for complex technical challenges</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🏛️</div>
+                        <h3>System Design</h3>
+                        <p>Comprehensive architectural design for large-scale distributed systems.</p>
+                        <ul class="service-features">
+                            >Architecture blueprints</li>
+                            >Technology selection</li>
+                            >Scalability planning</li>
+                            >Security design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🔍</div>
+                        <h3>Architecture Review</h3>
+                        <p>Critical evaluation and optimization of existing architectures.</p>
+                        <ul class="service-features">
+                            >Performance audit</li>
+                            >Security assessment</li>
+                            >Cost optimization</li>
+                            >Technical debt analysis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3>Cloud Strategy</h3>
+                        <p>Strategic planning for cloud adoption and optimization.</p>
+                        <ul class="service-features">
+                            >Multi-cloud architecture</li>
+                            >Migration planning</li>
+                            >Cost management</li>
+                            >Compliance frameworks</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">📚</div>
+                        <h3>Technical Leadership</h3>
+                        <p>Guiding teams toward architectural excellence.</p>
+                        <ul class="service-features">
+                            >Team mentorship</li>
+                            >Best practices</li>
+                            >Documentation standards</li>
+                            >Knowledge transfer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 7: Testimonials -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge">Testimonials</div>
+                    <h2 class="section-title">Gravitational Impact</h2>
+                    <p class="section-subtitle">What collaborators say about the experience</p>
+                </div>
+                
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The architectural vision transformed our entire platform. Performance improved 10x while reducing complexity."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <div class="author-name">Sarah Chen</div>
+                                <div class="author-role">CTO, TechCorp</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Deep technical expertise combined with exceptional communication. A true architect who understands both code and people."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <div class="author-name">Marcus Rodriguez</div>
+                                <div class="author-role">VP Engineering, ScaleUp</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The system design was flawless. We handled 10x traffic during our biggest launch without a single issue."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <div class="author-name">Alex Thompson</div>
+                                <div class="author-role">Founder, StartupXYZ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 8: Contact -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-badge">Contact</div>
+                    <h2 class="section-title">Initiate Connection</h2>
+                    <p class="section-subtitle">Ready to discuss your next architectural challenge?</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <a href="mailto:architect@universe.com">architect@universe.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🌍</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Location</div>
+                                <span>Global / Remote</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🔗</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Connect</div>
+                                <div class="social-links">
+                                    <a href="#" class="social-link">GitHub</a>
+                                    <a href="#" class="social-link">LinkedIn</a>
+                                    <a href="#" class="social-link">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            abel for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            abel for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            abel for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="cosmic-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-symbol">
+                        <div class="event-horizon"></div>
+                        <span class="logo-text">ARCHITECT</span>
+                    </div>
+                    <p>Designing digital universes with architectural precision.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            ><a href="pages/about.html">About</a></li>
+                            ><a href="pages/projects.html">Projects</a></li>
+                            ><a href="pages/services.html">Services</a></li>
+                            ><a href="pages/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            ><a href="pages/philosophy.html">Philosophy</a></li>
+                            ><a href="pages/insights.html">Insights</a></li>
+                            ><a href="pages/speaking.html">Speaking</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            ><a href="#" class="social-link">GitHub</a></li>
+                            ><a href="#" class="social-link">LinkedIn</a></li>
+                            ><a href="#" class="social-link">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024-2026 Architect. All rights reserved.</p>
+                <p>Designed with dark energy and gravitational precision.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/gravitational-system.js"></script>
+    <script src="js/cosmic-pulses.js"></script>
+    <script src="js/dark-matter-panels.js"></script>
+    <script src="js/ai-assistant.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
