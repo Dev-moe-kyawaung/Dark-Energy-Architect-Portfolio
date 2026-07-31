@@ -1,0 +1,27 @@
+{
+  "name": "dark-energy-portfolio",
+  "version": "1.0.0",
+  "description": "Premium architect portfolio with gravitational animations",
+  "scripts": {
+    "dev": "live-server --port=8000",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "gh-pages -d .",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "portfolio",
+    "architect",
+    "dark-theme",
+    "animations"
+  ],
+  "author": "Moe Kyaw",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "live-server": "^0.0.0-security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/dark-energy-portfolio.git"
+  }
+}
