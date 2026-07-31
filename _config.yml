@@ -1,0 +1,19 @@
+# GitHub Pages configuration
+title: Architect | Dark Energy Portfolio
+description: Senior Architect Portfolio - Designing Digital Universes
+url: https://yourusername.github.io
+baseurl: /dark-energy-portfolio
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from build
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .github/
+  - node_modules/
+  - package.json
+  - package-lock.json
