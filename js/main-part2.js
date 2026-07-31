@@ -318,6 +318,16 @@ window.addEventListener('unhandledrejection', function(event) {
             event.preventDefault();
         }
     }
-});
+});// Test function
+function testFunction() {
+    console.log('Part 2 is working!');
+    showNotification('Test notification', 'success');
+}
+
+// Run test after 2 seconds
+setTimeout(function() {
+    testFunction();
+}, 2000);
+
 
 console.log('✅ Main.js Part 2 loaded successfully');
